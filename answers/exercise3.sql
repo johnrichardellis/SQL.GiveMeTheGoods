@@ -1,0 +1,1 @@
+select * from Students where City between 'a%' and 'f%';

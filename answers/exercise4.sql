@@ -1,0 +1,1 @@
+select * from Students where City not like 'a%' and City not like 'c%' and City not like 'f%';
