@@ -49,15 +49,19 @@ select * from Student where Country not in ('Sint Maarten', 'Haiti');
 
 Use the **BETWEEN** operator to select all the records from the **Courses** table where the value of the **CreditHours** column is between 10 and 20.
 
+select * from Courses where CreditHours between 10 and 20;
+
 *(Add your query to the file exercise7.sql)*
 
 Use the **BETWEEN** operator to select all the records from the **Courses** table where the value of the **CreditHours** column is NOT between 10 and 20.
 
+select * from Courses where CreditHours not between 10 and 20;
 
 *(Add your query to the file exercise8.sql)*
 
 Use the **BETWEEN** operator to select all the records from the **Courses** table where the value of the **CourseName** column is alphabetically between 'ColdFusion' and 'Python'.
 
+select * from Courses where CourseName between 'ColdFusion' and 'Python';
 
 *(Add your query to the file exercise9.sql)*
 
@@ -65,10 +69,13 @@ Use the **BETWEEN** operator to select all the records from the **Courses** tabl
 
 When displaying the **Students** table, make an alias of the **PostalCode** column, the column should be called **Zip** instead.
 
+select PostalCode as Zip from Students;
 
 *(Add your query to the file exercise10.sql)*
 
 
 When displaying the **Students** table, refer to the table as **Learners** instead of Students.
+
+select * from Students as Leaners;
 
 *(Add your query to the file exercise11.sql)*
